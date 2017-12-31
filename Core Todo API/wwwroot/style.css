@@ -1,0 +1,80 @@
+﻿body {
+    background-color: #E8F5E9;
+    font-family: "Open Sans";
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.todo-container {
+    width: 50%;
+    margin: auto;
+}
+
+.todo-list {
+    counter-reset: todo;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo {
+    background-color: white;
+    margin: 2px 0 2px;
+    padding: 5px;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+    .todo::before {
+        counter-increment: todo;
+        content: counter(todo) ") ";
+    }
+
+.input-todo-container {
+    width: 50%;
+    margin: auto;
+}
+
+.input-todo {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-size: 19px;
+    text-align: center;
+}
+
+.fa-times {
+    float: right;
+    font-size: 20px;
+}
+
+.fa-times:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.fa-check {
+    float: right;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.fa-check:hover {
+    color: forestgreen;
+    cursor: pointer;
+}
+
+.about {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    opacity: .5;
+}
